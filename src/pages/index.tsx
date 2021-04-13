@@ -15,7 +15,9 @@ export default function Home() {
         <Flex justifyContent="center">
           <Box w="90px" border="1px" borderColor="gray.100"/>
         </Flex>
-        <SwiperComponent/>
+        <Box p="20">
+          <SwiperComponent/>
+        </Box>
       </Stack>
     </>
   )

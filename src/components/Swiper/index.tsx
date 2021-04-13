@@ -1,5 +1,8 @@
-import { Flex } from '@chakra-ui/react';
+import { Flex, Text } from '@chakra-ui/react';
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 export const SwiperComponent = (): JSX.Element => {
   return (
@@ -13,19 +16,34 @@ export const SwiperComponent = (): JSX.Element => {
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
     >
-
-      <Flex
-       background="url(/Europa.png)"
-        h="400"
-        bgSize="120%"
-        bgPosition="center"
-        bgRepeat="no-repeat"
-        align="center"
-        justify="center"
-        direction="column"
-      >
-         
-      </Flex>
+      <SwiperSlide>
+        <Flex
+          background="url(/Europa.png)"
+          h="400"
+          bgSize="120%"
+          bgPosition="center"
+          bgRepeat="no-repeat"
+          align="center"
+          justify="center"
+          direction="column"
+        >
+          <Text fontSize="40" color="white">Europa</Text>
+        </Flex>
+      </SwiperSlide>
+      <SwiperSlide>
+        <Flex
+        background="url(/Europa.png)"
+          h="400"
+          bgSize="120%"
+          bgPosition="center"
+          bgRepeat="no-repeat"
+          align="center"
+          justify="center"
+          direction="column"
+        >
+          <Text fontSize="40" color="white">XX</Text>
+        </Flex>
+      </SwiperSlide>
     </Swiper>
   )
 }
