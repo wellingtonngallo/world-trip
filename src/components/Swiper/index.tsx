@@ -7,7 +7,7 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 export const SwiperComponent = (): JSX.Element => {
   return (
     <Swiper
-      style={{height: '100%', width: '100%', marginTop: 32}}
+      style={{height: '100%', width: '100%', marginTop: 32, marginBottom: 32, maxWidth: '1480px'}}
       spaceBetween={50}
       slidesPerView={1}
       navigation
@@ -19,7 +19,7 @@ export const SwiperComponent = (): JSX.Element => {
       <SwiperSlide>
         <Flex
           background="url(/Europa.png)"
-          h="400"
+          h="500"
           bgSize="120%"
           bgPosition="center"
           bgRepeat="no-repeat"
@@ -27,13 +27,13 @@ export const SwiperComponent = (): JSX.Element => {
           justify="center"
           direction="column"
         >
-          <Text fontSize="40" color="white">Europa</Text>
+          <Text fontSize="40" color="white" align="center">Europa</Text>
         </Flex>
       </SwiperSlide>
       <SwiperSlide>
         <Flex
-        background="url(/Europa.png)"
-          h="400"
+          background="url(/Europa.png)"
+          h="500"
           bgSize="120%"
           bgPosition="center"
           bgRepeat="no-repeat"
@@ -41,7 +41,7 @@ export const SwiperComponent = (): JSX.Element => {
           justify="center"
           direction="column"
         >
-          <Text fontSize="40" color="white">XX</Text>
+          <Text fontSize="40" color="white" align="center">XX</Text>
         </Flex>
       </SwiperSlide>
     </Swiper>
